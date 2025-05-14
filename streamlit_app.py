@@ -32,7 +32,7 @@ if "show_about_box" not in st.session_state:
     st.session_state.show_about_box = False
 
 # ------------ Top Bar with Title + Buttons ------------
-top_bar = st.columns([6, 1, 1])
+top_bar = st.columns([6, 1, 2])
 with top_bar[0]:
     st.markdown(
         "<h1 style='text-align: left; color: #00BFFF; font-size: 48px;'>ProofPixel</h1>",
