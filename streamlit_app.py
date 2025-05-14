@@ -26,7 +26,7 @@ def predict(image, model):
 st.set_page_config(page_title="AI vs Real Classifier", layout="centered")
 
 # ------------ Top Bar Layout (Title + Nav) ------------
-top_bar = st.columns([6, 2, 2])
+top_bar = st.columns([6, 1, 2])
 with top_bar[0]:
     st.markdown(
         "<h1 style='text-align: left; color: #00BFFF; font-size: 60px;'>ProofPixel</h1>",
