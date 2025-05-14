@@ -25,23 +25,27 @@ def predict(image, model):
 # ------------ Page Setup ------------
 st.set_page_config(page_title="AI vs Real Classifier", layout="centered")
 
-# ------------ Navigation Menu ------------
-menu = st.columns([8, 2, 2])
-with menu[1]:
+# ------------ Top Bar Layout (Title + Nav) ------------
+top_bar = st.columns([6, 2, 2])
+with top_bar[0]:
+    st.markdown(
+        "<h1 style='text-align: left; color: #00BFFF; font-size: 60px;'>ProofPixel</h1>",
+        unsafe_allow_html=True
+    )
+with top_bar[1]:
     if st.button("Home"):
         st.experimental_rerun()
-with menu[2]:
+with top_bar[2]:
     if st.button("About Us"):
         st.info("This AI model classifies whether an image is AI-generated or real using a CNN-based model. Built by Aditya Akhouri and Tanusree Saha")
 
-st.markdown("-")
+st.markdown("---")
 
-# ------------ Image Display + Upload UI ------------
+# ------------ Main Section ------------
 st.title("AI vs Real Image Classifier")
 st.write("Upload an image to detect whether it is AI-generated or Real.")
 
 layout = st.columns(1)
-
 
 # Right Column: Upload & Prediction
 with layout[0]:
