@@ -34,7 +34,7 @@ with top_bar[0]:
     )
 with top_bar[1]:
     if st.button("Home"):
-        st.experimental_rerun()
+        st.inf0("You are at Home")
 with top_bar[2]:
     if st.button("About Us"):
         st.info("This AI model classifies whether an image is AI-generated or real using a CNN-based model. Built by Aditya Akhouri and Tanusree Saha")
